@@ -1,0 +1,25 @@
+#box-1 input{  
+    color: cyan;  
+    border-radius: 25px;
+    border-color: cyan;
+    background-color:rgba(245, 240, 235, 0.829); 
+    height: 35px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 80px;}
+
+#box-2 input{
+    border-radius: 25px;
+    border-color: cyan;
+    background-color: cyan;
+    height: 50px;
+    width: 50px;
+    margin-left: 80px;}
+#box-3 input{
+    color: white;
+    border-color:black;
+    background-color: blue;
+    height: 50px;
+    width: 200px;
+    box-shadow: 10px 5px 5px black;       
+    margin-left: 80px;}
