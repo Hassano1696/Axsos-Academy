@@ -1,0 +1,31 @@
+.container{
+    width: 1000px ;
+    margin: 0 auto;
+    border: solid black 2px;
+    height: 600px;
+    justify-content: space-between;
+            }    
+            .data h1, .data p {
+                margin: 20px 0px;
+                color: black;
+    }
+    .head {
+        background-color: #17a2b8;
+        height: 185px;
+        margin-bottom: 70px;   
+        width: 100%;
+    }
+        .small{
+            height: 20px;
+        }
+        .roundnround{
+            border-radius: 50%;
+            background-color: #fff;
+            height: 190px;
+            padding: 5px;
+            margin-top: 90px;
+            margin-left: 20px;
+            }    
+.data{
+    margin-left: 40px;
+}
