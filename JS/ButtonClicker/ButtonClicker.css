@@ -1,0 +1,100 @@
+
+.container{
+    display:flex ;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+header{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+h1{
+    margin-left: 20px;
+}
+#search{
+    margin-left: 270px;
+    height: 30px;
+    width: 200px;
+}
+#signin{
+color: white;
+border-color:black;
+background-color: rgb(8, 119, 114);
+height: 50px;
+width: 100px;
+box-shadow: 10px 5px 5px black;       
+margin-left: 260px ;
+}
+article{
+    margin-top: 50px;
+    border: solid black 2px;
+    height: 200px;
+    width: 600px;
+    text-decoration: white;
+    flex: 2;
+    display: flex;
+}
+aside{
+    border: black solid 2px;
+    height: 180px;
+    flex: 1;
+    margin-left: 80px;
+    margin-top: 50px;
+    text-align: center;
+}
+.Word{
+    width: 140px;
+    height: auto;
+}
+.likes{
+    background-color: rgb(160, 158, 21);
+    border-color:black;
+    box-shadow: 10px 5px 5px black;       
+    color: white;
+    height: 40px;
+    width: 80px;
+    margin-left: 30px;
+}
+.Difiniton{
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+
+}
+h2,h4,h5{
+    text-align: center;
+} 
+
+.Dojonary{
+    width: 316px;
+    height: auto;
+}
+#Add{
+    background-color: rgb(96, 190, 104);
+    border-color:black;
+    box-shadow: 10px 5px 5px black;       
+    color: white;
+    height: 50px;
+    width: 300px;
+    
+
+}
+span{
+    color: blue;
+    text-decoration: underline;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+span1{
+    color:black;
+    font-size: 40px;
+}
