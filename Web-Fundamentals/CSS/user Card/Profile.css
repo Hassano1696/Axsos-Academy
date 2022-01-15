@@ -1,0 +1,152 @@
+
+
+    .nav{
+        height: 50px;
+        width: 1000;
+        margin: 0px auto;
+        background-color: rgb(56, 54, 54);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .nav-title{
+        color: white;
+        font-size: 20px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 20px;
+    }
+
+    .nav-links{
+        display: flex;
+        
+        
+    }
+
+    ul li{
+        font-size: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 20px;
+
+    }
+
+    a{
+        color:silver;
+        text-decoration: none;   
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .active{
+        color:white;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    .btn{
+        background-color:rgb(33, 148,148);
+        border: 2px solid black;
+        color: white;
+        box-shadow: 2px 5px black;
+    }
+
+.container{
+    width: 1000px ;
+    margin: 0 auto;
+    display: flex;
+            }    
+    .row{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .col{
+        height: 480px;
+        flex: 2;
+        border: 2px solid black ;
+        font-size: 15px;
+        margin: 20px;
+    }
+            .data{
+                padding: 20px;
+        }
+            .data h1, .data p {
+                margin: 20px 0px;
+                color: black;
+    }
+    .head {
+        background-color: #17a2b8;
+        height: 125px;
+        margin-bottom: 70px;   
+        width: 100%;
+    }
+        .small{
+            height: 20px;
+        }
+        .roundnround{
+            border-radius: 50%;
+            background-color: #fff;
+            height: 190px;
+            padding: 5px;
+            margin-top: 20px;
+            margin-left: 20px;
+            }    
+            
+    .col-2{ 
+        margin: 20px;
+        flex: 1;
+        background-color: white;
+        border:  solid rgb(68, 63, 63) 2px;
+        height: 230px; 
+        justify-content: center;
+    }
+    .Connections{
+        background-color: rgb(68, 63, 63);
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+    .accept{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    h3{
+        color:white;
+    }
+    .round{
+        border:  solid rgb(235, 225, 225) 2px;
+        border-radius: 50%;
+        background-color: gray;
+        height: 40px;
+        width: 40px;
+    }
+    .ac{
+        height: 40px;
+        width: 40px;
+    }
+.right{
+    display: flex;
+    margin-top: 50px;
+    border: solid black 2px;
+    height: 350px;
+    justify-content: center;
+    justify-content: space-around;
+}
+.Connections-1{
+    background-color: rgb(68, 63, 63);
+    height: 75px;
+    width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.minicon{
+    border: black solid 2px;
+    margin-top: 20px;
+}
+.accept-1{
+    display: flex;
+    margin-top: 80px;
+}
+
