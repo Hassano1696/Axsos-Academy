@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+</head>
+<link rel="stylesheet" href="weather.css">
+
+<body>
+    <div class="container">
+        <header>
+            <h1>DojoWeather</h1>
+            <div class="cities">
+                <h2 onclick="alert('Loading weather report')">Burbank</h2>
+                <h2 onclick="alert('Loading weather report')">Chicago</h2>
+                <h2 onclick="alert('Loading weather report')">Dallas</h2>
+            </div>
+        </header>
+        <section>
+            <h3>San Jose</h3>
+            <div>
+                <label>show temperature in</label>
+                <select onchange="Switchtemp(this)" name="Temperature in:">
+                    <option> °F</option>
+                    <option>°C</option>
+                </select>
+            </div>
+        </section>
+        <div class="Line"></div>
+        <article>
+            <div class="Day">
+                <h4>Today</h4>
+                <img src="some_rain.png" alt="Some Rain">
+                <h5>Some Rain</h5>
+                <div class="temp">
+                    <span class="temp1"> 75</span>
+                    <span class="temp2">65</span>
+                </div>
+            </div>
+            <div class="Day">
+                <h4>Tomorrow</h4>
+                <img src="some_sun.png" alt="Some Rain">
+                <h5>Some Sun</h5>
+                <div class="temp">
+                    <span class="temp3"> 80</span>
+                    <span class="temp4">66</span>
+                </div>
+            </div>
+            <div class="Day">
+                <h4>Friday</h4>
+                <img src="some_clouds.png" alt="Some Rain">
+                <h5>Some Clouds</h5>
+                <div class="temp">
+                    <span class="temp5"> 69</span>
+                    <span class="temp6">61</span>
+                </div>
+            </div>
+            <div class="Day">
+                <h4>Saturday</h4>
+                <img src="some_sun.png" alt="Some Rain">
+                <h5>Some Sun</h5>
+                <div class="temp">
+                    <span class="temp7">78</span>
+                    <span class="temp8">70</span>
+                </div>
+            </div>
+        </article>
+        <section></section>
+        <footer>
+            <img src="cookie.png" alt="Cookies">
+            <div>
+                <h6>Stop! Cookie time </h6>
+                <p>We use Cookies(Sadly not the edible ones) to personalize </p>
+                <p>content and ads, to provide social media features and to</p>
+                <p>analyse our traffic. <span class="underline">Read more</span></p>
+            </div>
+            <button onclick="remov(this)" >I Accept </button>
+        </footer>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
