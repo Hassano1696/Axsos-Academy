@@ -1,0 +1,99 @@
+*{
+
+}
+.container{
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+header{
+background-color: #000000;
+height: 120px;
+width: 1000px;
+display: flex;
+align-items: center;
+
+}
+h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 30px;
+}
+.centerword{
+    width: 1000px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 190%;
+}
+article{
+    height: 150px;
+    width: 480px;
+    border: solid black 3px;
+    display: flex;
+    flex-direction: column;
+}
+.properties{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 19px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+button{
+    border-color:black;
+    box-shadow: 10px 5px 5px black;       
+    background-color: #ffd966;
+    height: 40px;
+    width: 70px;
+    }
+
+    #firstpost::after , #secondpost::after, #thirdpost::after{
+        content: "  Like(s)";
+    }
+aside{
+    width: 220px;
+    height: 350px;
+    border: solid black 3px;
+    text-align: center;
+    
+
+}
+img{
+    height: 90px;
+    width: 90px;
+    margin-top: 50px;
+}
+h3{
+    color: #095494;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+.allpage{
+    margin-top: 40px;
+    display: flex;
+    width: 1000px;
+}
+.posts{
+    flex: 2;
+    
+}
+.side{
+    flex: 1;
+}
