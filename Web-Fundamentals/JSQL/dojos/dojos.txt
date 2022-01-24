@@ -1,0 +1,42 @@
+insert into dojos ( name, created_at, updated_at)
+values( 'Hassan',now(),now());
+insert into dojos ( name, created_at, updated_at)
+values( 'Ronaldo',now(),now());
+insert into dojos ( name, created_at, updated_at)
+values( 'Messi',now(),now());
+select * from dojos
+
+
+
+delete from dojos; // toggle safe mode off
+select * from dojos
+
+
+
+insert into ninjas (first_name,last_name,age,created_at,updated_at,dojo_id) 
+values( 'hh','dd',12,now(),now(),4),('has','seg',24,now(),now(),4),('uty','wsf',32,now(),now(),4);
+
+
+insert into ninjas (first_name,last_name,age,created_at,updated_at,dojo_id) 
+values( 'efhh','ddrfd',12,now(),now(),5),('hasdf','lflseg',24,now(),now(),5),('udley','wsf',32,now(),now(),5);
+
+
+insert into ninjas (first_name,last_name,age,created_at,updated_at,dojo_id) 
+values( 'hheodp','dplfkd',112,now(),now(),6),('haokjis','seokig',24,now(),now(),6),('utdgwfwy','woesf',32,now(),now(),6);
+
+select * from ninjas
+
+
+select * from ninjas
+where dojo_id=4;
+
+
+select * from ninjas
+where dojo_id=6;
+
+
+SELECT * FROM dojos 
+WHERE dojos.id =6
+
+
+
