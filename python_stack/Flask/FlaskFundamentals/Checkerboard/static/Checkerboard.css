@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Checkerboard {
+    width: fit-content;
+    margin: 0 auto;
+    border: solid black 3px ;
+    display: flex;
+}
+.color1, .color2{
+    height:80px;
+    width: 80px;
+}
+div{
+    margin: 0;
+    padding: 0%;
+}
