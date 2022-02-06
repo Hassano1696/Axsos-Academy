@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    text-align: center;
+    margin-top: 240px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+.button1{
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.button2{
+    width: 100px;
+    height: 40px;
+    background-color:tomato;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+h1,h2{
+    margin-bottom: 40px;
+}
