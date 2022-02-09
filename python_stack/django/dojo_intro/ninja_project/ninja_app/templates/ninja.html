@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        h2{
+            margin-top: 50px;
+        }
+        p{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="whole_page" style="width: 1200px;  margin: 0 auto;">
+        <form action="/storage">
+            {% csrf_token %}
+
+
+            <p style="text-align: left;">Your Gold <span style="border: solid black 3px ; ">220</span></p>
+        </form>
+
+        <div  style="display: flex; margin: 100px auto ; justify-content: space-between;"  class="flex">
+    
+            <form style="height: 260px ; width: 260px; border: solid black 2px;" action="/choose">
+                {% csrf_token %}
+                <input type="hidden" name="which_form" value="Farm">
+                <h2>Farm</h2>
+                (Ears from 10-20 Golds)
+                <p><input type="submit" value='submit' class="btn"></p>
+    
+            </form>
+            
+            
+            
+            <form style="height: 260px ; width: 260px; border: solid black 2px;" action="/choose">
+                {% csrf_token %}
+                <input type="hidden" name="which_form" value="Cave">
+                <h2>Cave</h2>
+                <h3>(Earns from 5-10 Golds)</h3>
+                <p><input type="submit" value='submit' class="btn"></p>
+            </form>
+    
+    
+    
+            <form style="height: 260px ; width: 260px; border: solid black 2px;" action="/choose">
+                {% csrf_token %}
+                <input type="hidden" name="which_form" value="House">
+                <h2>House</h2>
+                <h3>(Earns from 2-5 Golds)</h3>
+                <p><input type="submit" value='submit' class="btn"></p>
+            </form>
+            
+            
+            
+            
+            <form style="height: 260px ; width: 260px; border: solid black 2px;" action="/choose">
+                {% csrf_token %}
+                <input type="hidden" name="which_form" value="Casino">
+                <h2>Casino</h2>
+                <h3>(Earns/Takes 0-50 Golds)</h3>
+                <p> <input type="submit" value='submit' class="btn"></p>
+    
+            </form>
+        </div>
+        <div style="width: 1200px;">
+
+            <h4 style="margin-left: 50px; font-size: 18px;">Activities:</h4>
+
+            <textarea name="" id="" cols="155" rows="10">
+
+            </textarea>
+        
+        
+        </div>
+    </div>
+
+    </body>
+</html>
