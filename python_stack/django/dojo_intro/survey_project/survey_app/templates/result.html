@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">    
+
+</head>
+<body>
+    <div class="container">
+        <h3>Submitted Info </h3>
+        <article>
+            <div class="result">
+                <p>Name:</p>
+                <p>Dojo Location:</p>
+                <p>Favorite Language:</p>
+                <p>Comments:</p>
+            </div>
+            <div class="result">
+                <p>{{ name }}</p>
+                <p> {{ Location }}</p>
+                <p> {{ Language }}</p>
+                <p>{{ comment }}</p>
+            </div>
+    
+        </article>
+
+    </div>
+        
+    
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+        <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'CSS/Survey.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+            <form action='/result' method='POST'>
+                {% csrf_token %}
+                <div class="flexing">
+                    <div class="left_side">
+                        <p>Your Name</p>
+                        <p>Dojo Location</p>
+                        <p>Favorite Language</p>
+                    </div>
+                    <div class="right_side">
+                        <input type='text' name='Name'>
+                        <select name="Location" id="">
+                            <option value="San Diego">San Diego</option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Chicago">Chicago</option>
+                        </select>
+                        <select name="Language" id="">
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                        </select>
+                    </div>
+                </div>
+                <h3>Comment ( Optional):</h3>
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    <input class="button" type='submit' value='Button'>
+            </form>
+        </div>
+    </body>
+
+    </html>
