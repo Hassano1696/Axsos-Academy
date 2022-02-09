@@ -1,0 +1,30 @@
+users.objects.create(first_name="hassann",last_name="Odeh",age="45",email="hamdansan@gmail.com",created_at="2018",updated_at="2019")
+(first_name="haneen",last_name="Odai",age="55",email="hamdansan@gmail.com",created_at="2018",updated_at="2019")
+(first_name="hamdnan",last_name="Odai",age="5",email="hamdansan@gmail.com",created_at="2018",updated_at="2019")
+
+
+
+
+ClassName.objects.all().values()
+
+
+
+objects.get(id=3).__dict__ 
+
+
+
+objects.get(id=1).__dict__ 
+
+
+
+
+c = users.objects.get(id=3)
+c.last_name = "Pancakes"
+c.save()
+
+
+ c=users.objects.get(id=2)
+ c.delete()
+
+
+users.objects.all().order_by("first_name")
