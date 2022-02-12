@@ -23,10 +23,18 @@
         table {
             margin: 40px auto;
         }
+        .button{
+            margin: 0 250px;
+        }
 
         th {
-            padding-right: 50px;
+            padding-right: 70px;
         }
+    .survey{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0  auto;
+    }
     </style>
 </head>
 
@@ -34,24 +42,24 @@
 
     <div class="container">
         <table>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Age</th>
             <tr>
-                <td>rhhrh</td>
-                <td>sdsdgsdg</td>
-
-                <td>egadg</td>
-
-                <td>ageryr</td>
-
-
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
             </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{user.id}}</td>
+                <td> {{user.first_name}} {{user.last_name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+            {% endfor %}
         </table>
         <form action='/store' method='POST'>
             {% csrf_token %}
-            <div style="display: flex; flex-wrap: wrap; margin:0  auto;">
+            <div class="survey" >
                 <p>First Name:<input type='text' name='firstname'>
                 </p>
                 <p>Last Name:<input type='text' name='lastname'>
@@ -61,13 +69,12 @@
                 <p>Age:<input type='text' name='age'>
                 </p>
             </div>
-            <div >
-
-                <input class="button" type='submit' value='Button' style="margin: 0 auto;" >
+            <div>
+                <input class="button" type='submit' value='Button' >
             </div>
         </form>
     </div>
 
 </body>
 
-</html> 
+</html>
