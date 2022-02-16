@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; ">
+
+        <h1>Add a New Show</h1> <a href="back">Go Back</a>
+    </header>
+    <form action='/store' method='GET' >
+        {% csrf_token %}
+            <p>Title : <input type='text' name='Title'>
+            </p>
+            <p>Network:<input type='text' name='Network'>
+            </p>
+            <p>Release Date:<input type='date' name='Release_Date'>
+            </p>
+            <textarea name="desc" id="" cols="30" rows="10"></textarea>
+        <div>
+            <input class="button" type='submit' value='Button' >
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+1-	Book.objects.create(title='C Sharp')
+	Book.objects.create(title='Java')
+	Book.objects.create(title='Python')
+	Book.objects.create(title='PHP')
+	Book.objects.create(title='Ruby')
+
+
+2-	Author.objects.create(first_name='Jane', last_name='Austen')
+	Author.objects.create(first_name='Emily', last_name='Dickinson')
+	Author.objects.create(first_name='Fyodor', last_name='Dostovsky')
+	Author.objects.create(first_name='William', last_name='Shakespeare')
+	Author.objects.create(first_name='Lau', last_name='Tzu')
+
+3- 	c= Book.objects.get(title='C Sharp')
+	c.title='C#'
+	 c.save()
+
+4-	c= Author.objects.get(id=4)
+	 c.first_name ='Bill'
+	 c.save()
+
+5-	 book1=Book.objects.get(id=1)
+	 book2=Book.objects.get(id=2)
+	 author1=Author.objects.get(id=1)
+	 author1.books.add(book1)
+	 author1.books.add(book2)
+
+6-	 book1=Book.objects.get(id=1)
+	 book2=Book.objects.get(id=2)
+	 book3=Book.objects.get(id=3)
+	 author1=Author.objects.get(id=2)
+	 author1.books.add(book1)
+	 author1.books.add(book2)
+	 author1.books.add(book3)
+
+7-	book1=Book.objects.get(id=4)
+ 	book2=Book.objects.get(id=2)
+ 	book3=Book.objects.get(id=3)
+ 	book4=Book.objects.get(id=1)
+ 	author3=Author.objects.get(id=3)
+ 	author3.books.add(book1)
+ 	author3.books.add(book2)
+ 	author3.books.add(book3)
+ 	author3.books.add(book4)
+
+8-	book1=Book.objects.get(id=1)
+ 	book2=Book.objects.get(id=2)
+ 	book3=Book.objects.get(id=3)
+ 	book4=Book.objects.get(id=4)
+ 	book5=Book.objects.get(id=5)
+ 	author4=Author.objects.get(id=4)
+ 	author4.books.add(book1)
+ 	author4.books.add(book2)
+ 	author4.books.add(book3)
+ 	author4.books.add(book4)
+ 	author4.books.add(book5)
+
+9- 	books_retrive=Book.objects.get(id=3)
+ 	books_retrive.authors.all()
+
+10-	author1=Author.objects.get(id=2)
+ 	book3.authors.remove(author1)
+ 	books_delete=Book.objects.get(id=3)
+
+11-	book2=Book.objects.get(id=2)
+	author5=Author.objects.get(id=5)
+	author5.books.add(book2)
+
+12-	author3=Author.objects.get(id=3)
+ 	author3.books.all()
+
+13-	author3=Author.objects.get(id=3)
+ 	author3.books.all()
