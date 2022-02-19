@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/add" method="POST">
+            {% csrf_token %}
+            <h1>Add A Book</h1>    
+            <div><label for="">Title </label><input type="text" name="Title" id=""></div>  
+            <div><label for="">Description </label><input type="text" name="Description" id=""></div>  
+            <div> <input type="submit" value="Add"> </div>    
+        </form>
+    <table>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>ACTION</th>
+        {% for book in Books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{ book.title }}</td>
+            <td> <a href="{% url 'bookdata' book.id %}">view</a> </td>
+        </tr>
+        {% endfor %}
+
+        </tr>
+    </table>
+    </main>
+
+</body>
+</html>
