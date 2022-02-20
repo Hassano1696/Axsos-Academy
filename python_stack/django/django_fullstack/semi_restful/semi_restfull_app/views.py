@@ -22,9 +22,9 @@ def store(request):
     else:
 
         show=Show.objects.create(Title=request.POST['Title'],Network=request.POST['Network'],Release_Date=request.POST['Release_Date'],desc=request.POST['desc'])
-        x=show.id
+        C=show.id
         request.session['showid']=show.id
-        return redirect(f'/show/{x}')
+        return redirect(f'/show/{C}')
 
 def show1(request,show_id):
     context = {
