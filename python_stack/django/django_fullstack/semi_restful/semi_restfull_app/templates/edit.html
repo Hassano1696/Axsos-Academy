@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Show</title>
 </head>
 <body>
-    
-    <header style="display: flex; justify-content: space-between; ">
+    <h1>Edit Show {{this_show.id}}</h1>
+    <p><a href="http://127.0.0.1:8000/shows">Go back</a></p>
 
-        <h1>edit </h1> <a href="back">Go Back</a>
-    </header>
-    <form action='/create' method='POST' >
-        {% csrf_token %}
-            <p>Title : <input type='text' name='Title'>
-            </p>
-            <p>Network:<input type='text' name='Network'>
-            </p>
-            <p>Release Date:<input type='date' name='Release_Date'>
-            </p>
-            <textarea name="desc" id="" cols="30" rows="10"></textarea>
-        <div>
-            <input class="button" type='submit' value='Button' >
+        <form action='/update/{{show.id}}' method='post'>
+            {% csrf_token %}
+            <p>Title: </p>
+            <input type='text' name='Title'>
+            <div>
+            <div>
+            <p>Network: </p>
+            <input type='text' name='Network'>
         </div>
-    </form>
+        <div>
+            <p>Release_Date: </p>
+            <input type='date' name='Release_Date'>
+        </div>
+        </div>
+            <p>Descreption: </p>
+            <textarea name="desc"  cols="54" rows="5"></textarea> 
+            <p><input type="submit" value='Update'  class="btn"></p>
+        </form>
+        <p><a href="/show/{{show.id}}">Go to Show</a></p>
 </body>
 </html>

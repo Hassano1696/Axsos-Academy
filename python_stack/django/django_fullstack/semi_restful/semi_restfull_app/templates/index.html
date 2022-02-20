@@ -27,15 +27,14 @@
             <td>{{show.Release_Date}}</td>
             <td style="display: flex; justify-content: space-evenly;">
 
-                <a href="edit">Show</a>
-                <a href="edit">Edit</a>
-                <a href="edit">Delete</a>
+                <a href="/show/{{show.id}}">Show</a>
+                <a href="/show/{{show.id}}/edit">Edit</a>
+                <a href="show/{{show.id}}/delete">Delete</a>
 
             </td>
         </tr>
         {% endfor %}
     </table>
-
     <a href="/shows/new">Add a new show</a>
 </body>
 </html>

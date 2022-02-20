@@ -16,7 +16,7 @@
 
         <h1>Add a New Show</h1> <a href="back">Go Back</a>
     </header>
-    <form action='/store' method='GET' >
+    <form action='/store' method='Post' >
         {% csrf_token %}
             <p>Title : <input type='text' name='Title'>
             </p>

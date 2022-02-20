@@ -4,8 +4,12 @@ urlpatterns = [
     path('shows', views.shows),
     path('shows/new', views.add),
     path('store',views.store),
+    path('show/<int:show_id>',views.show1,name='show'),
+    path('show/<int:show_id>/edit', views.edit, name='edit'),
+    path('update/<int:show_id>', views.update),
+    path('show/<int:show_id>/delete', views.delete),
+
     path('shows/back',views.back),
-    path('edit',views.edit),
     path('showid',views.showid)
     #path('ading_ninja', views.ninja),
 ]
