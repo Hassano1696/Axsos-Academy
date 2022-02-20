@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Show</title>
-</head>
-<body>
-    <h1>Edit Show {{this_show.id}}</h1>
-    <p><a href="http://127.0.0.1:8000/shows">Go back</a></p>
+    <title>Edit Show</title>    
+    <style>
+        a,form,h1{
+            margin-left: 600px;
+        }
+        .hh{
+            display: flex;
+            justify-content: space-between;
+        }
 
-        <form action='/update/{{show.id}}' method='post'>
-            {% csrf_token %}
-            <p>Title: </p>
-            <input type='text' name='Title'>
-            <div>
-            <div>
-            <p>Network: </p>
-            <input type='text' name='Network'>
-        </div>
+    </style>
+</head>
+
+<body>
+    <div class="hh"> <h1>Edit Show {{this_show.id}}</h1> <a href="http://127.0.0.1:8000/shows">Go back</a> </div>
+
+
+    <form action='/update/{{show.id}}' method='post'>
+        {% csrf_token %}
+        <p>Title: </p>
+        <input type='text' name='Title'>
         <div>
-            <p>Release_Date: </p>
-            <input type='date' name='Release_Date'>
+            <div>
+                <p>Network: </p>
+                <input type='text' name='Network'>
+            </div>
+            <div>
+                <p>Release_Date: </p>
+                <input type='date' name='Release_Date'>
+            </div>
         </div>
-        </div>
-            <p>Descreption: </p>
-            <textarea name="desc"  cols="54" rows="5"></textarea> 
-            <p><input type="submit" value='Update'  class="btn"></p>
-        </form>
-        <p><a href="/show/{{show.id}}">Go to Show</a></p>
+        <p>Descreption: </p>
+        <textarea name="desc" cols="60" rows="5"></textarea>
+        <p><input type="submit" value='Update' class="btn"></p>
+    </form>
+    <p><a href="/show/{{show.id}}">Go to Show</a></p>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
 </body>
+
 </html>

@@ -9,7 +9,4 @@ urlpatterns = [
     path('update/<int:show_id>', views.update),
     path('show/<int:show_id>/delete', views.delete),
 
-    path('shows/back',views.back),
-    path('showid',views.showid)
-    #path('ading_ninja', views.ninja),
 ]
