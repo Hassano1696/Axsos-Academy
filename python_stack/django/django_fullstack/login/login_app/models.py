@@ -23,7 +23,7 @@ class UserManager(models.Manager):
         if len(postData['password']) < 8 :
             errors["password"] = "password should be at least 8 characters"
         if  postData['password'] != postData['confirm_password']:
-            errors["password"] = "Passwords dose not match confirm "
+            errors["confirm_password"] = "Passwords dose not match "
         return errors
 
     def login_valid(self, postData):

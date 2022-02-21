@@ -15,6 +15,14 @@
         </style>
 </head>
 <body>
+    {% if messages %}
+    <ul class="messages">    
+        {% for message in messages %}    
+            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+        {% endfor %}
+    </ul>
+    {% endif %}
+
     <div class="main">
         <form action="/register" method="POST">
             {% csrf_token %}
@@ -26,19 +34,14 @@
             <div><label for="confirm_password"> Confirm Password:  <input type="text" name="confirm_password" id=""></label></div>
             <input type="submit" value="Register">
         </form>
-        {% if messages %}
-        <ul class="messages">    
-            {% for message in messages %}    
-                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
-            {% endfor %}
-        </ul>
-        {% endif %}
     
-        <form action="login">
+        <form action="login" method="post">
             {% csrf_token %}
             <h1> <Label>Log In</Label> </h1>
             <div> <label for="email"> Email:  <input type="text" name="email" id="">  </label>  </div>
             <div> <label for="password"> Password:  <input type="text" name="password" id="">  </label>  </div>
+            <input type="submit" value="LOGIN">
+
         </form>
     </div>
 </body>
