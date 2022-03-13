@@ -1,0 +1,11 @@
+body{
+	width:800px;
+	margin: 0 auto;
+	display:flex;
+	justify-content:space-between;
+	margin-top:250px;
+	font-size:30px;
+}
+a{
+	color:red;
+}
