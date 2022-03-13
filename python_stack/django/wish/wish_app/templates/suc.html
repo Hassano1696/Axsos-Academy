@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <form action="/addwish" method="post">
+            {% csrf_token %}
+            <h1>Hello {{request.session.first_name}}</h1>
+            <a href="127.0.0.1:8000/delete">Log Out</a>
+            <input type="submit" value="Make a Wish!">
+        </form>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Date Added</th>
+                <th>Actions</th>
+
+            </tr>
+            {% for wish in Wishes %}
+            <tr>
+                <td>{{wish.name}}</td>
+                <td>{{wish.description}}</td>
+                <td>
+                    <a href="/show/{{show.id}}">Remove</a>
+                    <a href="/show/{{show.id}}/edit">Edit</a>
+                    <a href="show/{{show.id}}/deletewish">Granted!</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </main>
+</body>
+
+</html>

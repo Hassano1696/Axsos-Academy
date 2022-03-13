@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        form{
+            margin-top: 100px;
+            height: 500px;
+            padding: 20px;
+            border: solid black 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="main">
+        <form action="/register" method="post">
+            {% csrf_token %}
+            <h1>Registration</h1>
+            <div><label for="first_name"> First Name:  <input type="text" name="first_name" id=""></label></div>
+            <div><label for="last_name"> Last Name:  <input type="text" name="last_name" id=""></label></div>
+            <div><label for="email"> Email:  <input type="text" name="email" id=""></label></div>
+            <div><label for="password"> Password:  <input type="text" name="password" id=""></label></div>
+            <div><label for="confirm_password"> Confirm Password:  <input type="text" name="confirm_password" id=""></label></div>
+            <input type="submit" value="Register">
+            {% if messages %}
+            <ul class="messages">    
+                {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                {% endfor %}
+            </ul>
+            {% endif %}
+        
+        </form>
+    
+        <form action="login" method="POST">
+            {% csrf_token %}
+            <h1> <Label>Log In</Label> </h1>
+            <div> <label for="email"> Email:  <input type="text" name="email" id="">  </label>  </div>
+            <div> <label for="password"> Password:  <input type="text" name="password" id="">  </label>  </div>
+            <input type="submit" value="LOGIN">
+
+        </form>
+    </div>
+</body>
+</html>
