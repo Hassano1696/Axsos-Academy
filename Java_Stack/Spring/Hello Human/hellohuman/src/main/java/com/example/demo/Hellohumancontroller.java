@@ -10,7 +10,7 @@ public class Hellohumancontroller {
 	@RequestMapping("")
 	 public String index(@RequestParam(value="q", required=false, defaultValue="Human") String name){
 
-			return ("welcome " + name);
+			return ("Welcome " + name);
 		}
 	
 }
