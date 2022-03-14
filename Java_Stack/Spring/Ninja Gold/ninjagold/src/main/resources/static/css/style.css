@@ -1,0 +1,9 @@
+form{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items: center;
+}
+.upper{
+	margin-top:50px;
+}
