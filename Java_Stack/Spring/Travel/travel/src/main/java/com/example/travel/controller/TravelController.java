@@ -72,7 +72,5 @@ public class TravelController {
     public String destroy(@PathVariable("id") Long id) {
 		TravelService.deleteTravel(id);
         return "redirect:/travels";
-    }
-	
-	
+    }		
 }
