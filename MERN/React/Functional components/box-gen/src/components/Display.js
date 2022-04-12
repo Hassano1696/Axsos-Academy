@@ -11,9 +11,9 @@ return (
             <div className="box"
             key={i}
             style={{
-                backgroundColor:box,
-                width:"60px",
-                height:"60px"
+                backgroundColor:box[0],
+                width: box[1] + "px",
+                height:box[1] + "px",
             }}
             ></div>
             

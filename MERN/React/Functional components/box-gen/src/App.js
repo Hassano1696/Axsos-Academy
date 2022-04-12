@@ -5,9 +5,9 @@ import Display from "./components/Display"
 
 function App() {
   const [boxes, setBoxes] = useState([]);
-  const createbox = (color) => {
-    setBoxes(boxes.concat(color));
-    //setBoxes([...boxes,color] )
+  const createbox = (color,dim) => {
+    setBoxes(boxes.concat([[color,dim]]));
+    //setBoxes([...boxes,[color,dim]] )
     console.log(color);
   }
   
