@@ -1,0 +1,21 @@
+.outside{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+.box{
+    margin: 2px;
+}
+main{
+    margin: 0 auto;
+    width: 600px;
+}
+button{
+    background-color: red;
+    color: white;
+    box-shadow: blue 5px 5px 5px ;
+}
+form{
+    margin-top: 50px;
+}
