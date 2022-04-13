@@ -7,10 +7,10 @@ function App() {
   const [boxes, setBoxes] = useState([]);
   const createbox = (color,dim) => {
     setBoxes(boxes.concat([[color,dim]]));
-    //setBoxes([...boxes,[color,dim]] )
+    //setBoxes([...boxes,[color,dim]])
     console.log(color);
   }
-  
+
   return (
     <div className='App'>
       <Form box={createbox} />
