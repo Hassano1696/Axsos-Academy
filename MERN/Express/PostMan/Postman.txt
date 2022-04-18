@@ -1,0 +1,15 @@
+https://pokeapi.co/api/v2/pokemon/22/
+
+https://pokeapi.co/api/v2/pokemon/Wartortle/
+
+
+
+https://pokeapi.co/api/v2/pokemon/Squirtle/
+
+
+
+https://pokeapi.co/api/v2/pokemon/Ivysaur/
+
+
+
+https://pokeapi.co/api/v2/pokemon/827/
